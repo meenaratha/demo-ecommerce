@@ -70,7 +70,7 @@
                             </span>
                             <!--end::Svg Icon-->
                         </span>
-                        <span class="menu-title">Products</span>
+                        <span class="menu-title">Woocommerce</span>
                         <span class="menu-arrow"></span>
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
@@ -79,10 +79,18 @@
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                <span class="menu-title">Products list</span>
+                                <span class="menu-title">Products</span>
                                 <span class="menu-arrow"></span>
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
+                                <div class="menu-item">
+                                    <a class="menu-link" href="../../demo1/dist/pages/profile/connections.html">
+                                        <span class="menu-bullet">
+                                            <span class="bullet bullet-dot"></span>
+                                        </span>
+                                        <span class="menu-title">Product list</span>
+                                    </a>
+                                </div>
                                 <div class="menu-item">
                                     <a class="menu-link" href="../../demo1/dist/pages/profile/overview.html">
                                         <span class="menu-bullet">
@@ -115,14 +123,7 @@
                                         <span class="menu-title">Orders</span>
                                     </a>
                                 </div>
-                                <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/profile/connections.html">
-                                        <span class="menu-bullet">
-                                            <span class="bullet bullet-dot"></span>
-                                        </span>
-                                        <span class="menu-title">Connections</span>
-                                    </a>
-                                </div>
+
                                 <div class="menu-item">
                                     <a class="menu-link" href="../../demo1/dist/pages/profile/activity.html">
                                         <span class="menu-bullet">

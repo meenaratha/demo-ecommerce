@@ -1,0 +1,46 @@
+.dataTables_length{
+    float: left;
+}
+.dataTables_length select{
+    background-color: rgb(26, 229, 243);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px ;
+    padding-right: 0px;
+
+}
+.dataTables_length select:focus-visible{
+    border: none;
+}
+.dataTables_length option{
+    background-color: rgb(135, 227, 245);
+    color: #fff;
+    border-bottom: 2px solid #ca1212;
+
+}
+.dataTables_filter{
+    float: right;
+}
+.dataTables_info{
+   display: flex;
+   align-items: center;
+   padding-top: 20px;
+}
+.dataTables_paginate{
+  float: right;
+  margin-top: -25px;
+}
+.paginate_button{
+    background-color: rgb(10, 193, 244);
+    padding: 5px 8px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.dataTables_paginate span a{
+    background-color:blue;
+    border-radius: 0px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid  #fff;
+}
