@@ -154,6 +154,10 @@
 .dataTables_filter label {
     display: flex;
 }
+.alert-success{
+    display: flex;
+    justify-content: space-around;
+}
 /* product image*/
 /* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto");

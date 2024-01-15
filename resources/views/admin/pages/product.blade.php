@@ -15,6 +15,8 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Include Toastr.css (for styling) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
@@ -24,6 +26,11 @@
     table{
         width:100%;
     }
+    .table thead {
+            background-color: red;
+            color: white; /* Set the text color to white for better visibility */
+        }
+
 </style>
     </head>
     <body class="sb-nav-fixed">
@@ -140,7 +147,7 @@
 
 
                              @if ($message = Session::get('success'))
-                <div class="alert alert-success" role="alert">
+                <div class="alert alert-success" role="alert" id="alert">
                     <p>{{ $message }}</p>
                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                 </div>
@@ -190,6 +197,8 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="{{ asset('admin/script.js') }}"></script>
+        <!-- Include Toastr.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         {{-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="{{ asset('admin/datatable.js') }}"></script> --}}
 

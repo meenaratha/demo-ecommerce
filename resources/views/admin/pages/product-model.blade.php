@@ -19,7 +19,7 @@
                    class="form d-flex flex-column flex-lg-row "
                    method="POST" enctype="multipart/form-data">
                    <input type="hidden" name="id" id="id">
-                    <div class="row g-0">
+
                       <!-- First Column -->
                       <div class="col-lg-8 pe-lg-2  " style="margin-top: 17px;" >
                         <div class="card mb-3">
@@ -80,7 +80,7 @@
                               </div>
 
                             </div>
-                        </div>
+                        </div></div>
 
                         <div class="card mb-3">
                           <div class="card-header bg-body-tertiary">
@@ -160,7 +160,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+
                       <!-- Second Column -->
                       <div class="col-lg-4 ps-lg-2 "  >
                         <div class="sticky-sidebar">
@@ -291,7 +291,7 @@
                             <div class="card-body">
                                 <div class="col-12 mb-4">
                                     <label class="form-label" for="import-status">Status  </label>
-                                    <select class="form-select" id="" name="stock">
+                                    <select class="form-select" id="stock" name="stock">
                                       <option value="in-stock">Available Product</option>
                                       <option value="Unavailabel">Unavailable </option>
 
@@ -306,7 +306,7 @@
                </div>
 
 
-            </div>
+
 
             <div class="modal-footer">
                 <button type="button"  id="kt_ecommerce_add_product_cancel" class="btn btn-light" data-bs-dismiss="modal">Close</button>

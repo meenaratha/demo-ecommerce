@@ -106,9 +106,13 @@
                 oTable.fnDraw(false);
                 $("#product_save").html('Submit');
                 $("#product_save"). attr("disabled", false);
+    // Show success toast message
+    toastr.success('Product saved successfully!');
             },
             error: function(data){
                 console.log(data);
+    // Show error toast message
+    toastr.error('Error saving product. Please try again.');
             }
         });
 

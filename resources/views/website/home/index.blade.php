@@ -1357,6 +1357,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col_hksd block">
                   <div class="module so-listing-tabs-ltr home3_listingtab_style2">
                     <div class="head-title">
@@ -1451,34 +1452,43 @@
                                 </div>
                             <!-- End Tabs-->
                           </div>
+                          <!---product data display foreach -->
+
                           <div class="wap-listing-tabs products-list grid">
                           <div class="ltabs-items-container">
                             <div class="ltabs-items ltabs-items-selected items-category-40" data-total="12">
-                              <div class="ltabs-items-inner ltabs-slider ">
+
+                                <div class="ltabs-items-inner ltabs-slider ">
+                                    @foreach($products as $product)
                                 <div class="ltabs-item ">
+
                                   <div class="item-inner product-thumb trg transition product-layout">
+
                                     <div class="product-item-container">
                                       <div class="left-block ">
                                         <div class="image product-image-container so-quickview ">
                                           <a class="lt-image"
                                             href="product.html" target="_self"
                                             title="Compact Portable Charger (External Battery)">
-                                          <img src="{{asset('website/image/catalog/demo/product/electronic/13-270x270.jpg')}}" alt="Compact Portable Charger (External Battery)">
-                                          </a>
+                                          <img src="{{ $product->productimage }}" alt="Compact Portable Charger (External Battery)">
+
+                                        </a>
                                         </div>
                                         <div class="box-label">
-                                        </div>
+                                            <span class="label-product label-sale">{{ $product->discount_option }}%</span>
+                                          </div>
                                       </div>
                                       <div class="right-block">
                                         <div class="caption">
                                           <h4>
                                             <a href="product.html"
                                               title="Compact Portable Charger (External Battery)" target="_self">
-                                            Compact Portable Charger (External Batte..
+                                            {{ $product->product_name }}
                                             </a>
                                           </h4>
                                           <p class="price">
-                                            $80.00
+                                            <span class="price-new">${{ $product->discount_price }}</span>
+                                            <span class="price-old">${{ $product->original_price }}</span>
                                           </p>
                                         </div>
                                         <div class="button-group2">
@@ -1488,7 +1498,10 @@
                                         </div>
                                       </div>
                                     </div>
+
                                   </div>
+
+                                  {{-- @foreach($products as $product)
                                   <div class="item-inner product-thumb trg transition product-layout">
                                     <div class="product-item-container">
                                       <div class="left-block ">
@@ -1524,8 +1537,10 @@
                                       </div>
                                     </div>
                                   </div>
+                                  @endforeach --}}
                                 </div>
-                                <div class="ltabs-item ">
+                                @endforeach
+                                {{-- <div class="ltabs-item ">
                                   <div class="item-inner product-thumb trg transition product-layout">
                                     <div class="product-item-container">
                                       <div class="left-block ">
@@ -1876,9 +1891,11 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                                </div> --}}
                               </div>
+
                             </div>
+
                             <div class="ltabs-items items-category-41 grid" data-total="8">
                                <div class="ltabs-loading"></div>
                             </div>
@@ -1900,8 +1917,10 @@
                             <div class="ltabs-items items-category-47 grid" data-total="8">
                                <div class="ltabs-loading"></div>
                             </div>
+
+                        </div>
                           </div>
-                          </div>
+
                         </div>
                       </div>
                     </div>

@@ -12,7 +12,7 @@ class ProductDisplayController extends Controller
     {
         $products = Product::all();
 
-        return view('welcome', compact('products'));
+        return view('website.home.index', compact('products'));
     }
 
 

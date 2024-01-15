@@ -19,6 +19,9 @@
     <p>{{ $product->quantity }}</p>
     <img src="{{ asset($product->productimage) }}" alt="Product Image" class="img-thumbnail" width="100" height="100">
 </div>
+<div class="description">
+    {{ $product->product_description }}
+</div>
 @endforeach
 
 </body>
