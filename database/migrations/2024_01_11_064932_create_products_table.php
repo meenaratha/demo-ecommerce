@@ -28,8 +28,13 @@ return new class extends Migration
             $table->string('product_thumbnail')->nullable();
             $table->string('discount_option')->nullable();
             $table->string('status')->nullable();
-            $table->string('category_id');
+             // Add the new column
+            //   $table->unsignedBigInteger('category_id');
+            //  // Add foreign key constraint
+            //  $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
             $table->timestamps();
+
         });
     }
 
@@ -39,5 +44,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('products');
+        // Remove the column and foreign key constraint
+        // $table->dropForeign(['category_id']);
+        // $table->dropColumn('category_id');
     }
 };

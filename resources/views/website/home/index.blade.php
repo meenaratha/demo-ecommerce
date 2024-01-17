@@ -1468,7 +1468,7 @@
                                       <div class="left-block ">
                                         <div class="image product-image-container so-quickview ">
                                           <a class="lt-image"
-                                            href="product.html" target="_self"
+                                            href="{{ route('products.details', ['id' => $product->id]) }}" target="_self"
                                             title="Compact Portable Charger (External Battery)">
                                           <img src="{{ $product->productimage }}" alt="Compact Portable Charger (External Battery)">
 
@@ -1481,7 +1481,7 @@
                                       <div class="right-block">
                                         <div class="caption">
                                           <h4>
-                                            <a href="product.html"
+                                            <a href="{{ route('products.details', ['id' => $product->id]) }}"
                                               title="Compact Portable Charger (External Battery)" target="_self">
                                             {{ $product->product_name }}
                                             </a>

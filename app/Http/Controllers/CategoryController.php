@@ -18,7 +18,7 @@ class CategoryController extends Controller
             ->addIndexColumn()
             ->make(true);
         }
-        return view('dashboard.pages.category');
+        return view('admin.pages.category');
     }
 
     public function store_category(Request $request)

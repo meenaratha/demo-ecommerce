@@ -37,6 +37,8 @@
     <link href="{{ asset('website/css/header/header6.css') }}" rel="stylesheet">
     <link id="color_scheme" href="{{ asset('website/css/home6.css') }}" rel="stylesheet">
     <link href="{{ asset('website/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('website/css/themecss/lib.css') }}" rel="stylesheet">
+
     <link href="{{ asset('website/css/quickview/quickview.css') }}  " rel="stylesheet">
     <!-- Google web fonts
          ============================================ -->

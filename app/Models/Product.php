@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Category;
 
 class Product extends Model
 {
-    //use HasFactory;
+    use HasFactory;
 
     protected $fillable = [
         'product_name',
@@ -25,8 +26,15 @@ class Product extends Model
         'product_thumbnail',
         'discount_option',
         'status',
-        'category_id',
+        // 'category_id',
 
 
     ];
+
+    public function relatedProducts()
+    {
+        return $this->belongsToMany(Product::class, 'related_products', 'product_id', 'related_id');
+    }
+
+
 }

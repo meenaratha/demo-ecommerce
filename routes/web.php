@@ -17,16 +17,23 @@ use App\Http\Controllers\ProductDisplayController;
 */
 
 Route::get('/', function () {
-    return view('website.home.index');
+    return view('website.pages.product-details');
+});
+
+Route::get('/quick-view', function () {
+    return view('website.pages.quick-view');
 });
 
 
-Route::get('/admin', function () {
-    return view('dashboard.index');
+Route::get('/admins', function () {
+    return view('admin.pages.category');
 });
 
 Route::get('/product', function () {
     return view('dashboard.pages.product');
+});
+Route::get('/add-product', function () {
+    return view('dashboard.pages.add-product');
 });
 Route::get('/add-product', function () {
     return view('dashboard.pages.add-product');
@@ -48,3 +55,8 @@ Route::post('/category-delete', [CategoryController::class, 'destroy_category'])
 
 //website
 Route::get('/web', [ProductDisplayController::class, 'webProductshow']);
+Route::get('/products/{id}', [ProductDisplayController::class, 'webProductdetails'])->name('products.details');
+Route::get('/quick-view/{id}', [ProductDisplayController::class, 'webquickview'])->name('quick-view');
+//related produt detail page
+Route::get('/related-products/{id}', [ProductDisplayController::class, 'showRelatedProducts'])->name('related-products.show');
+
